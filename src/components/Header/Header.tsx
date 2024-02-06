@@ -32,7 +32,7 @@ function Header() {
 
   return (
     <header
-      className={`z-20 sticky w-full bg-black transition-all duration-200 px-6 `}
+      className={` text-white z-20 sticky top-0 w-full bg-black transition-all duration-200 px-6 `}
     >
       <div className=" mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex items-center">
@@ -42,7 +42,7 @@ function Header() {
                 width={50}
                 height={50}
             />
-          <h1 className=" font-sans font-bold text-lg">KeySpeed Rivals</h1>
+          <h1 className=" font-sans font-bold text-lg ">KeySpeed Rivals</h1>
         </div>
 
         <nav className="space-x-5 flex items-center text-lg  min-w-fit">

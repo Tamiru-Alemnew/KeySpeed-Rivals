@@ -9,7 +9,7 @@ interface ChoiceCardProps{
 }
 
 const ChoiceCard = ({ src, alt, title, description }:ChoiceCardProps) => (
-  <div className="w-[450px] flex gap-2 rounded-lg p-4 bg-gray-800 text-white">
+  <div className="hover:bg-green-900  transition-colors duration-300 ease-in-out w-[450px] flex gap-2 rounded-lg p-4 bg-gray-800 text-white">
     <Image src={src} width={150} height={150} alt={alt} />
     <div>
       <h1 className="font-semibold text-2xl">{title}</h1>
