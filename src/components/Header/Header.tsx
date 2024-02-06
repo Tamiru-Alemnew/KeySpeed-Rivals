@@ -9,7 +9,7 @@ interface NavItemProps {
     }
 
 const NavItem = ({ href, children }:NavItemProps) => (
-  <Link href={href} className="hover:text-yellow-500 dark:hover:text-yellow-500">
+  <Link href={href} className="text-white hover:text-yellow-500 dark:hover:text-yellow-500">
     {children}
   </Link>
 );
@@ -32,7 +32,7 @@ function Header() {
 
   return (
     <header
-      className={`z-20 fixed w-full bg-black transition-all duration-200 px-6 `}
+      className={`z-20 sticky w-full bg-black transition-all duration-200 px-6 `}
     >
       <div className=" mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex items-center">
