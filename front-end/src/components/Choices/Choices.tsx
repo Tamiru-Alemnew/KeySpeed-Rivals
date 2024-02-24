@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 
 interface ChoiceCardProps{
@@ -21,18 +22,23 @@ const ChoiceCard = ({ src, alt, title, description }:ChoiceCardProps) => (
 function Choices() {
   return (
     <div className="flex gap-12 justify-center my-20">
+      <Link href="/practice">
+        <ChoiceCard
+          src="/practice.svg"
+          alt="practice"
+          title="Practice"
+          description="Practice typing with our custom made typing test"
+        />
+      </Link>
+
+    <Link href="/multiplayer">
       <ChoiceCard
         src="/practice.svg"
         alt="practice"
-        title="Practice"
-        description="we provide best UI/UX designer that will create best Performance website and applications with animations"
-      />
-      <ChoiceCard
-        src="/practice.svg"
-        alt="practice"
-        title="Practice"
-        description="we provide best UI/UX designer that will create best Performance website and applications with animations"
-      />
+        title="Multiplayer"
+        description="Compete with other players in real time"
+        />
+    </Link>
     </div>
   );
 }
