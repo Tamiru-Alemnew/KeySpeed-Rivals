@@ -1,7 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-function SetTimer() {
+function SetTimer(timer, setTimer) {
+  
+  
+
   return (
     <div className=" w-80 text-white">
       <h1>SetTimer</h1>
@@ -15,6 +18,7 @@ function SetTimer() {
 }
 
 function Practice() {
+  const [timer , setTimer] = useState(1)
   const text = "The quick brown fox jumps over the lazy dog";
   const [input, setInput] = useState("");
 
@@ -38,7 +42,7 @@ function Practice() {
 
   return (
     <div className="flex flex-col items-center">
-      <SetTimer />
+      <SetTimer timer={timer} setTimer={setTimer} />
       <div className="flex items-center justify-center h-[80vh] w-screen">
         <h1 className="text-gray-500 text-4xl">
           {text.split("").map((char, index) => {
