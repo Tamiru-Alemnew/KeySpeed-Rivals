@@ -1,9 +1,9 @@
 import React from "react";
-import Multiplier from "@/components/Multiplier/Multiplier";
+import Multiplayer from "@/components/Multiplayer/Multiplayer";
 function page() {
   return (
     <div>
-      <Multiplier />
+      <Multiplayer />
     </div>
   );
 }

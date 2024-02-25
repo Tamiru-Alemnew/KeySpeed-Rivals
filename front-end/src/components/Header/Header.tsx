@@ -25,9 +25,9 @@ function Header() {
   }, []);
 
     const navItems = [
-      { href: "#", text: "Practice" },
+      { href: "/practice", text: "Practice" },
       { href: "#", text: "Leaderboard" },
-      { href: "#", text: "MultiPlayer" },
+      { href: "/multiplayer", text: "MultiPlayer" },
     ];
 
   return (
@@ -36,12 +36,12 @@ function Header() {
     >
       <div className=" mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex items-center">
-            <Image
-                src="/favicon.ico"
-                alt="KeySpeed Rivals"
-                width={50}
-                height={50}
-            />
+          <Image
+            src="/favicon.ico"
+            alt="KeySpeed Rivals"
+            width={50}
+            height={50}
+          />
           <h1 className=" font-sans font-bold text-lg ">KeySpeed Rivals</h1>
         </div>
 
@@ -54,9 +54,15 @@ function Header() {
 
           <Link
             href="/login"
+            className="w-fit whitespace-nowrap px-7 text-white   items-center justify-center p-4  py-3 overflow-hidden font-medium rounded-lg shadow-md group"
+          >
+            Login
+          </Link>
+          <Link
+            href="/signup"
             className="w-fit whitespace-nowrap px-7 bg-gray-700 text-white   items-center justify-center p-4  py-3 overflow-hidden font-medium rounded-lg shadow-md group"
           >
-            Signup
+            Create Account
           </Link>
         </nav>
       </div>
